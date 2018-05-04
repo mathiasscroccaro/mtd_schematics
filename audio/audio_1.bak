@@ -83,67 +83,35 @@ Text GLabel 2300 950  0    50   Input ~ 0
 gnd
 Wire Wire Line
 	2300 950  2500 950 
-Text GLabel 2050 3150 2    50   Input ~ 0
+Text GLabel 1650 1650 2    50   Input ~ 0
 gnd
-Text GLabel 2050 3050 2    50   Input ~ 0
+Text GLabel 1650 1550 2    50   Input ~ 0
 bclk
-Text GLabel 2050 2950 2    50   Input ~ 0
+Text GLabel 1650 1450 2    50   Input ~ 0
 dout
-Text GLabel 2050 2850 2    50   Input ~ 0
+Text GLabel 1650 1350 2    50   Input ~ 0
 lrcl
 Wire Wire Line
-	2050 3150 1850 3150
+	1650 1650 1450 1650
 Wire Wire Line
-	2050 3050 1850 3050
+	1650 1550 1450 1550
 Wire Wire Line
-	2050 2950 1850 2950
+	1650 1450 1450 1450
 Wire Wire Line
-	2050 2850 1850 2850
-Text GLabel 2050 3250 2    50   Input ~ 0
+	1650 1350 1450 1350
+Text GLabel 1650 1750 2    50   Input ~ 0
 3.3v
 Wire Wire Line
-	2050 3250 1850 3250
+	1650 1750 1450 1750
 $Comp
-L Connector_Generic:Conn_01x06 J?
-U 1 1 5AECD865
-P 1650 2950
-F 0 "J?" H 1570 3367 50  0000 C CNN
-F 1 "Conn_01x06" H 1570 3276 50  0000 C CNN
-F 2 "" H 1650 2950 50  0001 C CNN
-F 3 "~" H 1650 2950 50  0001 C CNN
-	1    1650 2950
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5AEA1DA7
+P 1250 1550
+F 0 "J1" H 1170 1967 50  0000 C CNN
+F 1 "Comum" H 1170 1876 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-05_05x2.54mm_Straight" H 1250 1550 50  0001 C CNN
+F 3 "~" H 1250 1550 50  0001 C CNN
+	1    1250 1550
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:LED D?
-U 1 1 5AECD9B1
-P 2950 3000
-F 0 "D?" V 2988 2883 50  0000 R CNN
-F 1 "LED" V 2897 2883 50  0000 R CNN
-F 2 "" H 2950 3000 50  0001 C CNN
-F 3 "~" H 2950 3000 50  0001 C CNN
-	1    2950 3000
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2950 3250 3    50   Input ~ 0
-gnd
-Wire Wire Line
-	2950 3250 2950 3150
-$Comp
-L Device:R R?
-U 1 1 5AECE167
-P 2650 2750
-F 0 "R?" V 2443 2750 50  0000 C CNN
-F 1 "50" V 2534 2750 50  0000 C CNN
-F 2 "" V 2580 2750 50  0001 C CNN
-F 3 "" H 2650 2750 50  0001 C CNN
-	1    2650 2750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1850 2750 2500 2750
-Wire Wire Line
-	2800 2750 2950 2750
-Wire Wire Line
-	2950 2750 2950 2850
 $EndSCHEMATC

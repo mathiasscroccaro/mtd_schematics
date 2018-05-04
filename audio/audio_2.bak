@@ -13,105 +13,101 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector_Generic:Conn_01x06 J3
-U 1 1 5AEA00A4
-P 2700 1850
-F 0 "J3" H 2780 1842 50  0000 L CNN
-F 1 "Direito" H 2780 1751 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm" H 2700 1850 50  0001 C CNN
-F 3 "~" H 2700 1850 50  0001 C CNN
-	1    2700 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J2
-U 1 1 5AEA00EA
-P 2700 1150
-F 0 "J2" H 2779 1142 50  0000 L CNN
-F 1 "Esquerdo" H 2779 1051 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm" H 2700 1150 50  0001 C CNN
-F 3 "~" H 2700 1150 50  0001 C CNN
-	1    2700 1150
-	1    0    0    -1  
-$EndComp
-Text GLabel 2300 2050 0    50   Input ~ 0
+Text GLabel 3100 1900 2    50   Input ~ 0
 gnd
-Text GLabel 2300 1650 0    50   Input ~ 0
-3.3v
-Text GLabel 2300 1950 0    50   Input ~ 0
+Text GLabel 3100 1800 2    50   Input ~ 0
 bclk
-Text GLabel 2300 1850 0    50   Input ~ 0
+Text GLabel 3100 1700 2    50   Input ~ 0
 dout
-Text GLabel 2300 1750 0    50   Input ~ 0
+Text GLabel 3100 1600 2    50   Input ~ 0
 lrcl
 Wire Wire Line
-	2300 1650 2500 1650
+	3100 1900 2900 1900
 Wire Wire Line
-	2300 2050 2500 2050
+	3100 1800 2900 1800
 Wire Wire Line
-	2300 1950 2500 1950
+	3100 1700 2900 1700
 Wire Wire Line
-	2300 1850 2500 1850
-Wire Wire Line
-	2300 1750 2500 1750
-Text GLabel 2300 1350 0    50   Input ~ 0
-gnd
-Text GLabel 2300 1450 0    50   Input ~ 0
-3.3v
-Text GLabel 2300 1250 0    50   Input ~ 0
-bclk
-Text GLabel 2300 1150 0    50   Input ~ 0
-dout
-Text GLabel 2300 1050 0    50   Input ~ 0
-lrcl
-Wire Wire Line
-	2300 1450 2500 1450
-Wire Wire Line
-	2300 1350 2500 1350
-Wire Wire Line
-	2300 1250 2500 1250
-Wire Wire Line
-	2300 1150 2500 1150
-Wire Wire Line
-	2300 1050 2500 1050
-Text GLabel 2300 2150 0    50   Input ~ 0
+	3100 1600 2900 1600
+Text GLabel 3100 2000 2    50   Input ~ 0
 3.3v
 Wire Wire Line
-	2300 2150 2500 2150
-Text GLabel 2300 950  0    50   Input ~ 0
-gnd
-Wire Wire Line
-	2300 950  2500 950 
-Text GLabel 1650 1650 2    50   Input ~ 0
-gnd
-Text GLabel 1650 1550 2    50   Input ~ 0
-bclk
-Text GLabel 1650 1450 2    50   Input ~ 0
-dout
-Text GLabel 1650 1350 2    50   Input ~ 0
-lrcl
-Wire Wire Line
-	1650 1650 1450 1650
-Wire Wire Line
-	1650 1550 1450 1550
-Wire Wire Line
-	1650 1450 1450 1450
-Wire Wire Line
-	1650 1350 1450 1350
-Text GLabel 1650 1750 2    50   Input ~ 0
-3.3v
-Wire Wire Line
-	1650 1750 1450 1750
+	3100 2000 2900 2000
 $Comp
 L Connector_Generic:Conn_01x05 J1
 U 1 1 5AEA1DA7
-P 1250 1550
-F 0 "J1" H 1170 1967 50  0000 C CNN
-F 1 "Comum" H 1170 1876 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_KK-6410-05_05x2.54mm_Straight" H 1250 1550 50  0001 C CNN
-F 3 "~" H 1250 1550 50  0001 C CNN
-	1    1250 1550
+P 2700 1800
+F 0 "J1" H 2620 2217 50  0000 C CNN
+F 1 "Comum" H 2620 2126 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-05_05x2.54mm_Straight" H 2700 1800 50  0001 C CNN
+F 3 "~" H 2700 1800 50  0001 C CNN
+	1    2700 1800
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J2
+U 1 1 5AEA1231
+P 1550 1750
+F 0 "J2" H 1600 2867 50  0000 C CNN
+F 1 "RPI" H 1600 2776 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm" H 1550 1750 50  0001 C CNN
+F 3 "~" H 1550 1750 50  0001 C CNN
+	1    1550 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 1150 850  0    50   Input ~ 0
+3.3v
+Text GLabel 2000 1050 2    50   Input ~ 0
+gnd
+Text GLabel 2000 1350 2    50   Input ~ 0
+bclk
+Text GLabel 2000 2650 2    50   Input ~ 0
+dout
+Text GLabel 1200 2550 0    50   Input ~ 0
+lrcl
+Wire Wire Line
+	1150 850  1350 850 
+Wire Wire Line
+	2000 1050 1850 1050
+Wire Wire Line
+	2000 1350 1850 1350
+Wire Wire Line
+	2000 2650 1850 2650
+Wire Wire Line
+	1200 2550 1350 2550
+NoConn ~ 1350 2750
+NoConn ~ 1350 2650
+NoConn ~ 1350 2450
+NoConn ~ 1350 2350
+NoConn ~ 1350 2250
+NoConn ~ 1350 2150
+NoConn ~ 1350 2050
+NoConn ~ 1350 1950
+NoConn ~ 1350 1850
+NoConn ~ 1350 1750
+NoConn ~ 1350 1650
+NoConn ~ 1350 1550
+NoConn ~ 1350 1450
+NoConn ~ 1350 1350
+NoConn ~ 1350 1250
+NoConn ~ 1350 1150
+NoConn ~ 1350 1050
+NoConn ~ 1350 950 
+NoConn ~ 1850 850 
+NoConn ~ 1850 950 
+NoConn ~ 1850 1150
+NoConn ~ 1850 1250
+NoConn ~ 1850 1450
+NoConn ~ 1850 1550
+NoConn ~ 1850 1650
+NoConn ~ 1850 1750
+NoConn ~ 1850 1850
+NoConn ~ 1850 1950
+NoConn ~ 1850 2050
+NoConn ~ 1850 2150
+NoConn ~ 1850 2250
+NoConn ~ 1850 2350
+NoConn ~ 1850 2450
+NoConn ~ 1850 2550
+NoConn ~ 1850 2750
 $EndSCHEMATC
