@@ -14,26 +14,26 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 3100 1900 2    50   Input ~ 0
+Text GLabel 3100 2000 2    50   Input ~ 0
 gnd
-Text GLabel 3100 1800 2    50   Input ~ 0
+Text GLabel 3100 1900 2    50   Input ~ 0
 bclk
 Text GLabel 3100 1700 2    50   Input ~ 0
 dout
 Text GLabel 3100 1600 2    50   Input ~ 0
 lrcl
 Wire Wire Line
-	3100 1900 2900 1900
+	3100 2000 2900 2000
 Wire Wire Line
-	3100 1800 2900 1800
+	3100 1900 2900 1900
 Wire Wire Line
 	3100 1700 2900 1700
 Wire Wire Line
 	3100 1600 2900 1600
-Text GLabel 3100 2000 2    50   Input ~ 0
+Text GLabel 3100 2100 2    50   Input ~ 0
 3.3v
 Wire Wire Line
-	3100 2000 2900 2000
+	3100 2100 2900 2100
 $Comp
 L Connector_Generic:Conn_02x20_Odd_Even J2
 U 1 1 5AEA1231
@@ -100,12 +100,12 @@ NoConn ~ 1850 2450
 NoConn ~ 1850 2550
 NoConn ~ 1850 2750
 $Comp
-L Connector_Generic:Conn_01x06 J?
+L Connector_Generic:Conn_01x06 J1
 U 1 1 5AECD970
 P 2700 1800
-F 0 "J?" H 2620 2217 50  0000 C CNN
+F 0 "J1" H 2620 2217 50  0000 C CNN
 F 1 "Conn_01x06" H 2620 2126 50  0000 C CNN
-F 2 "" H 2700 1800 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-06_06x2.54mm_Straight" H 2700 1800 50  0001 C CNN
 F 3 "~" H 2700 1800 50  0001 C CNN
 	1    2700 1800
 	-1   0    0    -1  
@@ -113,11 +113,11 @@ $EndComp
 Wire Wire Line
 	2000 1550 1850 1550
 Wire Wire Line
-	2900 2100 3050 2100
-Wire Wire Line
-	3050 2100 3050 2300
-Wire Wire Line
-	3050 2300 2000 2300
-Wire Wire Line
 	2000 1550 2000 2300
+Wire Wire Line
+	2900 1800 3400 1800
+Wire Wire Line
+	3400 1800 3400 2300
+Wire Wire Line
+	2000 2300 3400 2300
 $EndSCHEMATC

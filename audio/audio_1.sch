@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:audio_1-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -83,67 +84,103 @@ Text GLabel 2300 950  0    50   Input ~ 0
 gnd
 Wire Wire Line
 	2300 950  2500 950 
-Text GLabel 2050 3150 2    50   Input ~ 0
+Text GLabel 4050 1700 2    50   Input ~ 0
 gnd
-Text GLabel 2050 3050 2    50   Input ~ 0
+Text GLabel 4050 1600 2    50   Input ~ 0
 bclk
-Text GLabel 2050 2950 2    50   Input ~ 0
+Text GLabel 4050 1500 2    50   Input ~ 0
 dout
-Text GLabel 2050 2850 2    50   Input ~ 0
+Text GLabel 4050 1400 2    50   Input ~ 0
 lrcl
 Wire Wire Line
-	2050 3150 1850 3150
+	4050 1700 3850 1700
 Wire Wire Line
-	2050 3050 1850 3050
+	4050 1600 3850 1600
 Wire Wire Line
-	2050 2950 1850 2950
+	4050 1500 3850 1500
 Wire Wire Line
-	2050 2850 1850 2850
-Text GLabel 2050 3250 2    50   Input ~ 0
+	4050 1400 3850 1400
+Text GLabel 4050 1800 2    50   Input ~ 0
 3.3v
-Wire Wire Line
-	2050 3250 1850 3250
 $Comp
-L Connector_Generic:Conn_01x06 J?
+L Connector_Generic:Conn_01x06 J1
 U 1 1 5AECD865
-P 1650 2950
-F 0 "J?" H 1570 3367 50  0000 C CNN
-F 1 "Conn_01x06" H 1570 3276 50  0000 C CNN
-F 2 "" H 1650 2950 50  0001 C CNN
-F 3 "~" H 1650 2950 50  0001 C CNN
-	1    1650 2950
+P 3650 1500
+F 0 "J1" H 3570 1917 50  0000 C CNN
+F 1 "Conn_01x06" H 3570 1826 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-06_06x2.54mm_Straight" H 3650 1500 50  0001 C CNN
+F 3 "~" H 3650 1500 50  0001 C CNN
+	1    3650 1500
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 5AECD9B1
-P 2950 3000
-F 0 "D?" V 2988 2883 50  0000 R CNN
-F 1 "LED" V 2897 2883 50  0000 R CNN
-F 2 "" H 2950 3000 50  0001 C CNN
-F 3 "~" H 2950 3000 50  0001 C CNN
-	1    2950 3000
-	0    -1   -1   0   
+P 5450 1300
+F 0 "D1" V 5488 1183 50  0000 R CNN
+F 1 "LED" V 5397 1183 50  0000 R CNN
+F 2 "LEDs:LED_D3.0mm" H 5450 1300 50  0001 C CNN
+F 3 "~" H 5450 1300 50  0001 C CNN
+	1    5450 1300
+	-1   0    0    1   
 $EndComp
-Text GLabel 2950 3250 3    50   Input ~ 0
+Text GLabel 5700 2050 3    50   Input ~ 0
 gnd
-Wire Wire Line
-	2950 3250 2950 3150
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5AECE167
-P 2650 2750
-F 0 "R?" V 2443 2750 50  0000 C CNN
-F 1 "50" V 2534 2750 50  0000 C CNN
-F 2 "" V 2580 2750 50  0001 C CNN
-F 3 "" H 2650 2750 50  0001 C CNN
-	1    2650 2750
+P 4900 1300
+F 0 "R1" V 4693 1300 50  0000 C CNN
+F 1 "100" V 4784 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4830 1300 50  0001 C CNN
+F 3 "" H 4900 1300 50  0001 C CNN
+	1    4900 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q1
+U 1 1 5AED99AB
+P 5600 1650
+F 0 "Q1" H 5791 1696 50  0000 L CNN
+F 1 "BC548" H 5791 1605 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 5800 1575 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5600 1650 50  0001 L CNN
+	1    5600 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2050 5700 1850
+Wire Wire Line
+	5700 1450 5700 1300
+Wire Wire Line
+	5700 1300 5600 1300
+Wire Wire Line
+	5300 1300 5050 1300
+Wire Wire Line
+	4750 1300 4600 1300
+Wire Wire Line
+	4500 1650 4500 1300
+Wire Wire Line
+	4500 1300 3850 1300
+$Comp
+L Device:R R2
+U 1 1 5AEDC4DD
+P 4900 1650
+F 0 "R2" V 4693 1650 50  0000 C CNN
+F 1 "2700" V 4784 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4830 1650 50  0001 C CNN
+F 3 "" H 4900 1650 50  0001 C CNN
+	1    4900 1650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1850 2750 2500 2750
+	5050 1650 5400 1650
 Wire Wire Line
-	2800 2750 2950 2750
+	4750 1650 4500 1650
 Wire Wire Line
-	2950 2750 2950 2850
+	3850 1800 4050 1800
+Text GLabel 4600 1100 1    50   Input ~ 0
+3.3v
+Wire Wire Line
+	4600 1100 4600 1300
 $EndSCHEMATC
